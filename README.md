@@ -1,68 +1,120 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📄 Callen Egan - Portfolio
 
-## Available Scripts
+🚀 **Live Site:** [https://callen55047.github.io](https://callen55047.github.io)
 
-In the project directory, you can run:
+### 💡 Overview
+This is my personal portfolio website designed to showcase my work as an **iOS Software Engineer**. The site highlights my professional experience, featured projects, technical skills, and contact information. The goal is to provide potential employers, recruiters, and collaborators with a clear sense of my technical capabilities and design sensibilities.
 
-### `npm start`
+The website is built using **React.js** and is deployed on **GitHub Pages** for ease of access and maintenance.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## ✨ Features
+### 📂 Projects Showcase
+- **Featured Projects:** Highlights my most impactful work, such as **Shade Tattoo**, **Trulioo SDK**, and **Jetlag 3D**.
+- **Case Studies:** Provides detailed context and problem-solving approaches for each project.
 
-### `npm test`
+### 💻 Professional Experience
+- Lists my professional work history, including companies like **Trulioo Information Services**, **Traqspera**, and **Serotonin Software**.
+- Showcases my key technical skills and contributions to each role.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📧 Contact Me
+- Provides a direct contact form for potential employers and collaborators.
+- Links to my **LinkedIn** and **GitHub** profiles.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
+The portfolio is built using the following technologies:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+| Technology     | Purpose                                                     |
+|----------------|------------------------------------------------------------|
+| **React.js**   | Frontend framework for building UI components              |
+| **Tailwind CSS** | Utility-first CSS framework for responsive design        |
+| **GitHub Pages** | Free hosting solution for static sites                    |
+| **gh-pages**   | NPM package for easy deployment to GitHub Pages            |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📜 File Structure
+The project is structured as follows:
+```plaintext
+callen-egan-portfolio
+│
+├── public            # Static files
+├── src               # Main React components and pages
+│   ├── components    # Reusable UI components
+│   ├── pages         # Portfolio sections (Home, Projects, Contact, etc.)
+│   ├── assets        # Images, logos, and assets
+│   ├── App.js        # Root app component
+│
+├── .gitignore        # Git ignore for node_modules, build files, etc.
+├── package.json      # Project dependencies and scripts
+├── README.md         # This file
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Deployment
+The portfolio is deployed using **GitHub Pages**. Here's how to deploy changes:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Make changes to your project locally.
+2. Run the build command:
+```bash
+npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Deploy the project:
+```bash
+npm run deploy
+```
 
-## Learn More
+4. The site will automatically be updated at:
+   [https://callenegan.github.io](https://callenegan.github.io)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧱 How to Run Locally
+If you’d like to clone the repository and test it locally:
 
-### Code Splitting
+1. Clone the repository:
+```bash
+git clone https://github.com/callenegan/callen-egan-portfolio.git
+cd callen-egan-portfolio
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+2. Install dependencies:
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+3. Run the development server:
+```bash
+npm start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The app should open in your browser at:
+```
+http://localhost:3000
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## 🎉 Future Improvements
+- **Blog Section:** Add a space to share technical articles, case studies, and personal insights.
+- **Dark Mode Toggle:** Implement a dark mode for the site.
+- **Projects CMS Integration:** Connect to a headless CMS for easier content management.
 
-### Advanced Configuration
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## 📬 Contact
+If you're interested in working together, feel free to reach out:
+- 📧 **Email:** [callenegan94@gmail.com](mailto:callenegan94@gmail.com)
+- 💼 **LinkedIn:** [linkedin.com/in/callen-egan-2983b218b](https://www.linkedin.com/in/callen-egan-2983b218b)
+- 💻 **GitHub:** [github.com/callenegan](https://github.com/callenegan)
 
-### Deployment
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+✅ **This portfolio is a continuous work-in-progress.** 🚀
+If you have feedback, I'd love to hear it! 💡
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
