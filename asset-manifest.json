@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/callen-egan-portfolio/static/css/main.522866ed.css",
-    "main.js": "/callen-egan-portfolio/static/js/main.d8ad4221.js",
+    "main.css": "/callen-egan-portfolio/static/css/main.9d1f62c4.css",
+    "main.js": "/callen-egan-portfolio/static/js/main.81e2d4c3.js",
     "index.html": "/callen-egan-portfolio/index.html",
-    "main.522866ed.css.map": "/callen-egan-portfolio/static/css/main.522866ed.css.map",
-    "main.d8ad4221.js.map": "/callen-egan-portfolio/static/js/main.d8ad4221.js.map"
+    "main.9d1f62c4.css.map": "/callen-egan-portfolio/static/css/main.9d1f62c4.css.map",
+    "main.81e2d4c3.js.map": "/callen-egan-portfolio/static/js/main.81e2d4c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.522866ed.css",
-    "static/js/main.d8ad4221.js"
+    "static/css/main.9d1f62c4.css",
+    "static/js/main.81e2d4c3.js"
   ]
 }
