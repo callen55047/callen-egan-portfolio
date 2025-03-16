@@ -6,23 +6,6 @@
 This is my personal portfolio website designed to showcase my work as a **Software Engineer**. The site highlights my professional experience, featured projects, technical skills, and contact information. The goal is to provide potential employers, recruiters, and collaborators with a clear sense of my technical capabilities and design sensibilities.
 
 
----
-
-## ✨ Projects Showcase
-
-### ✒️ **Shade Tattoo:**
-- A two-sided marketplace designed to improve artist outreach and decrease new client onboarding friction.
-
-
-### 📂 **Trulioo DocV:**
-- A revolutionary document verification SDK that's lightweight and easy to integrate into your native application.
-
-
-### 📂 **Traqspera Timesheets:**
-- An offline-ready timesheet & job tracking tailored for complex contracting worksites.
-- 
-
-
 ### 💻 Professional Experience
 - Lists my professional work history, including companies like **Trulioo Information Services**, **Traqspera**, and **Serotonin Software**.
 - Showcases my key technical skills and contributions to each role.
