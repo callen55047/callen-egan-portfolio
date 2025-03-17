@@ -4,14 +4,21 @@ const res = (path) => {
 
 const LocalImage = {
     Shade: {
-        artistPage: res('images/sp-artist-page.png'),
-        skills: res('images/sp-skills.png'),
-        inquiry: res('images/sp-inquiry.png'),
-        messaging: res('images/sp-messaging.png'),
-        newSession: res('images/sp-newSession.png'),
-        bookings: res('images/sp-bookings.png'),
-        history: res('images/sp-history.png'),
-        settings: res('images/sp-settings.png'),
+        artistPage: res('shade/portal/sp-artist-page.png'),
+        skills: res('shade/portal/sp-skills.png'),
+        inquiry: res('shade/portal/sp-inquiry.png'),
+        messaging: res('shade/portal/sp-messaging.png'),
+        newSession: res('shade/portal/sp-newSession.png'),
+        bookings: res('shade/portal/sp-bookings.png'),
+        history: res('shade/portal/sp-history.png'),
+        settings: res('shade/portal/sp-settings.png'),
+
+        appIcon: res('shade/client/AppIcon1024.png'),
+        clientArtistProfile: res('shade/client/sc-artistPage.PNG'),
+        clientBooking: res('shade/client/sc-booking.PNG'),
+        clientFeed: res('shade/client/sc-feed.PNG'),
+        clientMessaging: res('shade/client/sc-messaging.PNG'),
+        clientSessions: res('shade/client/sc-sessions.PNG'),
     },
     Trulioo: {
 
@@ -19,7 +26,8 @@ const LocalImage = {
 }
 
 const LocalVideo = {
-    SHADE_ARTIST_PORTAL: res('videos/shade-artist-portal.mp4')
+    SHADE_ARTIST_PORTAL: res('shade/portal/shade-artist-portal.mp4'),
+    TRULIOO_DOCV: res('trulioo/TruliooDocV.MP4'),
 }
 
 

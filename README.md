@@ -1,6 +1,6 @@
 ## 📄 Callen Egan - Portfolio
 
-🚀 **Live Site:** [https://callen55047.github.io/callen-egan-portfolio/](https://callen55047.github.io)
+🚀 **Live Site:** [https://callen55047.github.io/callen-egan-portfolio/](https://callen55047.github.io/callen-egan-portfolio/)
 
 ### 💡 Overview
 This is my personal portfolio website designed to showcase my work as a **Software Engineer**. The site highlights my professional experience, featured projects, technical skills, and contact information. The goal is to provide potential employers, recruiters, and collaborators with a clear sense of my technical capabilities and design sensibilities.

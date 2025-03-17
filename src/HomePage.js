@@ -27,7 +27,7 @@ export default function HomePage() {
                     <h3 className="project-title">✒️ Shade Tattoo</h3>
                     <p className="project-description">
                         Shade is a <strong>two-sided marketplace</strong> designed to connect tattoo artists with clients looking for an easy, frictionless way to <strong>discover, book, and pay</strong> for their tattoos.
-                        It consists of two main interfaces:
+                        It consists of two main interfaces, the Artist portal and the client mobile app.
                     </p>
 
                     <h4>Achievements:</h4>
@@ -61,6 +61,9 @@ export default function HomePage() {
                             <img src={LocalImage.Shade.inquiry} alt="shade-portal" />
                             <img src={LocalImage.Shade.messaging} alt="shade-portal" />
                             <img src={LocalImage.Shade.newSession} alt="shade-portal" />
+                            <img src={LocalImage.Shade.bookings} alt="shade-portal" />
+                            <img src={LocalImage.Shade.history} alt="shade-portal" />
+                            <img src={LocalImage.Shade.settings} alt="shade-portal" />
                         </div>
 
 
@@ -70,11 +73,11 @@ export default function HomePage() {
                         </video>
                     </div>
 
-                    {/* Client Mobile App Section */}
+                    {/* Client Mobile App ------------------- */}
                     <div className="project-subsection">
-                        <h4 className="project-subtitle">📱 Client Mobile App</h4>
+                        <h4 className="project-subtitle">Client Mobile App</h4>
                         <p className="project-text">
-                            A seamless mobile experience where users can **browse artists, request bookings, and make secure payments**.
+                            A seamless mobile experience built with Flutter and Android and iOS.
                             Key features:
                         </p>
                         <ul className="project-list">
@@ -84,22 +87,48 @@ export default function HomePage() {
                             <li>⭐ Rate and review tattoo experiences</li>
                         </ul>
 
+                        <div className="image-gallery">
+                            <img src={LocalImage.Shade.clientFeed} alt="shade-portal" />
+                            <img src={LocalImage.Shade.clientArtistProfile} alt="shade-portal" />
+                            <img src={LocalImage.Shade.clientMessaging} alt="shade-portal" />
+                            <img src={LocalImage.Shade.clientBooking} alt="shade-portal" />
+                            <img src={LocalImage.Shade.clientSessions} alt="shade-portal" />
+                        </div>
 
-                        <img src={window.location.origin + "images/sp-artist-page.png"} alt={"shade-artist-portal"} />
-                        <video controls className="project-video">
-                            <source src="/videos/shade-client-app.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                        <div className="app-store-link">
+                            <img src={LocalImage.Shade.appIcon} alt="Download on the App Store" className="app-store-badge" />
+                            <div style={{width: '25px'}} />
+
+                            <a href="https://apps.apple.com/ca/app/shade-tattoo/id6474099834" target="_blank" rel="noopener noreferrer">
+                                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                                    <h3>View on the App Store</h3>
+                                </div>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
 
+
+                {/* TRULIOO DOCV -------------------- */}
                 <div className="project-card">
                     <h3 className="project-title">📂 Trulioo DocV</h3>
                     <p className="project-description">
                         A revolutionary document verification SDK that's lightweight and easy to integrate into your native application.
                     </p>
+
+                    <h4>Achievements:</h4>
+                    <ul>
+                        <li><strong>Simplified design</strong>, catering to non-technical audience.</li>
+                        <li>Direct <strong>Stripe integration</strong> for payments.</li>
+                        <li>oAuth 2.0 architecture with <strong>short-lived access token authentication.</strong></li>
+                        <li>Http/2 server connection with <strong>live data updates</strong></li>
+                        <li><strong>Powerful messaging service with media attachments</strong>, timeline of events, and session creation.</li>
+                        <li>Maximum browser compatability with <strong>optimized performance</strong></li>
+                    </ul>
+
                     <video controls className="project-video">
-                        <source src="/videos/TruliooDocV.MP4" type="video/mp4" />
+                        <source src={LocalVideo.TRULIOO_DOCV} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -129,7 +158,7 @@ export default function HomePage() {
 
             {/* Footer */}
             <footer className="footer">
-                ✅ This portfolio is a continuous work-in-progress. 🚀 If you have feedback, I'd love to hear it! 💡
+                This portfolio is a continuous work-in-progress. 🚀
             </footer>
         </div>
     );

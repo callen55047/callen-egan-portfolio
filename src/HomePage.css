@@ -61,8 +61,9 @@ strong {
 }
 
 .image-gallery img {
-    width: 500px; /* Set a fixed width for images */
+    max-width: 500px; /* Set a fixed width for images */
     height: auto;
+    max-height: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     scroll-snap-align: start;
@@ -97,6 +98,23 @@ strong {
     font-size: 1.125rem;
     margin-bottom: 1rem;
     color: #d1d5db;
+}
+
+.app-store-link {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+.app-store-badge {
+    width: 100px;  /* Adjust size */
+    border-radius: 10px;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.app-store-badge:hover {
+    transform: scale(1.1);  /* Slight zoom on hover */
 }
 
 /* New Styles for Shade Tattoo Subsections */
@@ -139,7 +157,8 @@ strong {
 }
 
 .project-video {
-    width: 100%;
+    max-width: 100%;
+    max-height: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     margin-top: 0.75rem;
