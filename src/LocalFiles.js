@@ -21,13 +21,21 @@ const LocalImage = {
         clientSessions: res('shade/client/sc-sessions.PNG'),
     },
     Trulioo: {
-
+        document: res('trulioo/docv-document.png'),
+        selection: res('trulioo/docv-selection.png'),
+        instruction: res('trulioo/docv-instruction.png'),
+        front: res('trulioo/docv-front.png'),
+        frontSuccess: res('trulioo/docv-frontSuccess.png'),
+        flip: res('trulioo/docv-flip.png'),
+        backError: res('trulioo/docv-backError.png'),
+        review: res('trulioo/docv-review.png'),
+        complete: res('trulioo/docv-complete.png'),
+        appIcon: res('trulioo/Trulioo_app_icon.png'),
     }
 }
 
 const LocalVideo = {
-    SHADE_ARTIST_PORTAL: res('shade/portal/shade-artist-portal.mp4'),
-    TRULIOO_DOCV: res('trulioo/TruliooDocV.MP4'),
+    SHADE_ARTIST_PORTAL: res('shade/portal/shade-artist-portal.mp4')
 }
 
 

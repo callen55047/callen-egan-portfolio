@@ -104,7 +104,6 @@ export default function HomePage() {
                                     <h3>View on the App Store</h3>
                                 </div>
                             </a>
-
                         </div>
                     </div>
                 </div>
@@ -115,22 +114,40 @@ export default function HomePage() {
                     <h3 className="project-title">📂 Trulioo DocV</h3>
                     <p className="project-description">
                         A revolutionary document verification SDK that's lightweight and easy to integrate into your native application.
+                        Built with Kotlin Multi-platform, Swift, and Typescript.
                     </p>
 
                     <h4>Achievements:</h4>
-                    <ul>
-                        <li><strong>Simplified design</strong>, catering to non-technical audience.</li>
-                        <li>Direct <strong>Stripe integration</strong> for payments.</li>
-                        <li>oAuth 2.0 architecture with <strong>short-lived access token authentication.</strong></li>
-                        <li>Http/2 server connection with <strong>live data updates</strong></li>
-                        <li><strong>Powerful messaging service with media attachments</strong>, timeline of events, and session creation.</li>
-                        <li>Maximum browser compatability with <strong>optimized performance</strong></li>
+                    <ul className="project-list">
+                        <li><strong>Apple HIG</strong> approved design</li>
+                        <li>Custom <strong>machine learning models</strong> for optimized capture performance.</li>
+                        <li>oAuth 2.0 architecture with <strong>short-lived access token authentication and cert-pinning.</strong></li>
+                        <li><strong>Native UI</strong> built on each platform.</li>
+                        <li>Built with <strong>error detection and recovery.</strong></li>
                     </ul>
 
-                    <video controls className="project-video">
-                        <source src={LocalVideo.TRULIOO_DOCV} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <div className="image-gallery">
+                        <img src={LocalImage.Trulioo.document} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.selection} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.instruction} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.front} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.frontSuccess} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.flip} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.backError} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.review} alt="trulioo docv" />
+                        <img src={LocalImage.Trulioo.complete} alt="trulioo docv" />
+                    </div>
+
+                    <div className="app-store-link">
+                        <img src={LocalImage.Trulioo.appIcon} alt="Download on the App Store" className="app-store-badge" />
+                        <div style={{width: '25px'}} />
+
+                        <a href="https://apps.apple.com/ca/app/trulioo/id1619835943" target="_blank" rel="noopener noreferrer">
+                            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                                <h3>View on the App Store</h3>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
                 <div className="project-card">
