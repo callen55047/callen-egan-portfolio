@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 import {LocalImage, LocalVideo} from "./LocalFiles";
+import {AppStoreLink} from "./components/Buttons";
 
 export default function HomePage() {
     return (
@@ -55,18 +56,6 @@ export default function HomePage() {
                             <li>📋 Custom inquiry form design</li>
                         </ul>
 
-                        <div className="image-gallery">
-                            <img src={LocalImage.Shade.artistPage} alt="shade-portal" />
-                            <img src={LocalImage.Shade.skills} alt="shade-portal" />
-                            <img src={LocalImage.Shade.inquiry} alt="shade-portal" />
-                            <img src={LocalImage.Shade.messaging} alt="shade-portal" />
-                            <img src={LocalImage.Shade.newSession} alt="shade-portal" />
-                            <img src={LocalImage.Shade.bookings} alt="shade-portal" />
-                            <img src={LocalImage.Shade.history} alt="shade-portal" />
-                            <img src={LocalImage.Shade.settings} alt="shade-portal" />
-                        </div>
-
-
                         <video controls className="project-video">
                             <source src={LocalVideo.SHADE_ARTIST_PORTAL} type="video/mp4" />
                             Your browser does not support the video tag.
@@ -95,16 +84,10 @@ export default function HomePage() {
                             <img src={LocalImage.Shade.clientSessions} alt="shade-portal" />
                         </div>
 
-                        <div className="app-store-link">
-                            <img src={LocalImage.Shade.appIcon} alt="Download on the App Store" className="app-store-badge" />
-                            <div style={{width: '25px'}} />
-
-                            <a href="https://apps.apple.com/ca/app/shade-tattoo/id6474099834" target="_blank" rel="noopener noreferrer">
-                                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                                    <h3>View on the App Store</h3>
-                                </div>
-                            </a>
-                        </div>
+                        <AppStoreLink
+                            url={"https://apps.apple.com/ca/app/shade-tattoo/id6474099834"}
+                            imageSource={LocalImage.Shade.appIcon}
+                        />
                     </div>
                 </div>
 
@@ -113,12 +96,12 @@ export default function HomePage() {
                 <div className="project-card">
                     <h3 className="project-title">📂 Trulioo DocV</h3>
                     <p className="project-description">
-                        A revolutionary document verification SDK that's lightweight and easy to integrate into your native application.
-                        Built with Kotlin Multi-platform, Swift, and Typescript.
+                        A revolutionary <strong>document verification SDK</strong> that's <strong>lightweight and easy to integrate</strong> into your native application.
+                        Built with <strong>Kotlin Multi-platform, Swift</strong>, and Typescript.
                     </p>
 
                     <h4>Achievements:</h4>
-                    <ul className="project-list">
+                    <ul>
                         <li><strong>Apple HIG</strong> approved design</li>
                         <li>Custom <strong>machine learning models</strong> for optimized capture performance.</li>
                         <li>oAuth 2.0 architecture with <strong>short-lived access token authentication and cert-pinning.</strong></li>
@@ -138,27 +121,33 @@ export default function HomePage() {
                         <img src={LocalImage.Trulioo.complete} alt="trulioo docv" />
                     </div>
 
-                    <div className="app-store-link">
-                        <img src={LocalImage.Trulioo.appIcon} alt="Download on the App Store" className="app-store-badge" />
-                        <div style={{width: '25px'}} />
-
-                        <a href="https://apps.apple.com/ca/app/trulioo/id1619835943" target="_blank" rel="noopener noreferrer">
-                            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                                <h3>View on the App Store</h3>
-                            </div>
-                        </a>
-                    </div>
+                    <AppStoreLink
+                        url={"https://apps.apple.com/ca/app/trulioo/id1619835943"}
+                        imageSource={LocalImage.Trulioo.appIcon}
+                    />
                 </div>
 
                 <div className="project-card">
                     <h3 className="project-title">📂 Traqspera Timesheets</h3>
                     <p className="project-description">
-                        An offline-ready timesheet & job tracking system tailored for complex contracting worksites.
+                        Traqspera Timesheets is a React Native mobile app designed to bring <strong>seamless offline timesheet tracking </strong>
+                        and job management to any workplace. Whether in a remote job site or a busy office,
+                        Traqspera ensures that employees can <strong>track time, manage jobs, and stay updated</strong>—whether online or offline.
                     </p>
-                    <video controls className="project-video">
-                        <source src="/videos/traqspera-timesheets.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+
+                    <h4>Achievements:</h4>
+                    <ul>
+                        <li><strong>Custom Data Sync Processor</strong> – Ensures efficient, conflict-free synchronization of timesheet data when reconnecting to the network.</li>
+                        <li><strong>Advanced Clock-In/Out Rules</strong> – Supports customizable rules for time tracking, including location-based restrictions and shift validation.</li>
+                        <li><strong>Full Offline Support</strong> – Employees can track time, edit entries, and manage jobs without an internet connection—data syncs automatically once reconnected.</li>
+                        <li><strong>Live Updates & Real-Time Sync</strong> – When online, the app delivers instant updates to keep timesheets and job data accurate across devices.</li>
+                        <li><strong>Cross-Platform Efficiency</strong> – Built with React Native, ensuring a smooth experience on both iOS and Android.</li>
+                    </ul>
+
+                    <AppStoreLink
+                        url={"https://apps.apple.com/ca/app/traqspera-timesheets/id1539200842"}
+                        imageSource={LocalImage.Traqspera.icon}
+                    />
                 </div>
             </section>
 

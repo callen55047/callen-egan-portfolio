@@ -4,15 +4,6 @@ const res = (path) => {
 
 const LocalImage = {
     Shade: {
-        artistPage: res('shade/portal/sp-artist-page.png'),
-        skills: res('shade/portal/sp-skills.png'),
-        inquiry: res('shade/portal/sp-inquiry.png'),
-        messaging: res('shade/portal/sp-messaging.png'),
-        newSession: res('shade/portal/sp-newSession.png'),
-        bookings: res('shade/portal/sp-bookings.png'),
-        history: res('shade/portal/sp-history.png'),
-        settings: res('shade/portal/sp-settings.png'),
-
         appIcon: res('shade/client/AppIcon1024.png'),
         clientArtistProfile: res('shade/client/sc-artistPage.PNG'),
         clientBooking: res('shade/client/sc-booking.PNG'),
@@ -31,6 +22,9 @@ const LocalImage = {
         review: res('trulioo/docv-review.png'),
         complete: res('trulioo/docv-complete.png'),
         appIcon: res('trulioo/Trulioo_app_icon.png'),
+    },
+    Traqspera: {
+        icon: res('traqspera/icon.jpg')
     }
 }
 

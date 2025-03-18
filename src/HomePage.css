@@ -1,7 +1,7 @@
 /* HomePage.css */
 .homepage-container {
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #20c997, #0c7b93, black);
+    background: linear-gradient(to bottom right, #089d71, #007189, black);
     color: white;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
 }
 
 strong {
-    color: #ca00d1;
+    color: #ff80eb;
 }
 
 .header-section {
@@ -25,7 +25,7 @@ strong {
 .header-title {
     font-size: 3.75rem;
     font-weight: 800;
-    background: linear-gradient(to right, #ed52ff, #c800a9);
+    background: linear-gradient(to right, #e990f3, #f219d0);
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
