@@ -1,6 +1,13 @@
 import React from 'react'
 
-const AppStoreLink = ({ url, imageSource }: { url: string, imageSource: string }) => {
+interface IAppIconLink {
+  url: string,
+  imageSource: string,
+  description?: string
+}
+const AppIconLink = (props: IAppIconLink) => {
+  const { url, imageSource, description } = props
+
     return (
         <div className="app-store-link">
             <img src={imageSource} alt="App Icon" className="app-store-badge" />
@@ -9,7 +16,7 @@ const AppStoreLink = ({ url, imageSource }: { url: string, imageSource: string }
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                 <h3>
                     <a href={url} target="_blank" rel="noopener noreferrer">
-                        View on the App Store
+                      {description || 'View on the App Store'}
                     </a>
                 </h3>
             </div>
@@ -19,5 +26,5 @@ const AppStoreLink = ({ url, imageSource }: { url: string, imageSource: string }
 }
 
 export {
-    AppStoreLink,
+    AppIconLink,
 }

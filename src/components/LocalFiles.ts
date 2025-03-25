@@ -28,6 +28,13 @@ const LocalImage = {
     },
     Serotonin: {
         icon: res('serotonin/jetlagIcon.png')
+    },
+    Coffee: {
+        tower_gameplay: res('coffee/gameplay.gif'),
+        board_placement: res('coffee/boardPlacement.gif'),
+    },
+    Shared: {
+        githubIcon: res('shared/githubIcon.png'),
     }
 }
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles/HomePage.css';
 import {LocalImage, LocalVideo} from "./components/LocalFiles";
-import {AppStoreLink} from "./components/Buttons";
+import {AppIconLink} from "./components/Buttons";
 import FooterSection from "./components/FooterSection";
 import ContactSection from "./components/ContactSection";
 import HeaderSection from "./components/HeaderSection";
-import ProjectsSection from "./components/ProjectsSection";
+import ProjectsSection, {ProjectCard} from "./components/ProjectsSection";
 
 export default function HomePage() {
   return (
@@ -13,6 +13,33 @@ export default function HomePage() {
       <HeaderSection/>
 
       <ProjectsSection>
+        {/* COFFEE TABLE DEFENSE -------------------- */}
+        <ProjectCard
+          title={<>☕️️ Coffee Table Defender</>}
+          description={<>
+            <strong>Coffee Table Defender is an AR tower defense game</strong> for iOS and Android that
+            lets you <strong>turn your living room, desk, or coffee table into a battlefield! </strong>
+            Place your <strong>customizable towers anywhere in augmented reality, </strong>
+            then defend against waves of invading enemies trying to overrun your base. With real-world scaling,
+            <strong> strategic tower placement, and physics-based interactions, </strong>
+            Coffee Table Defender transforms your everyday
+            space into an immersive battleground. Upgrade your defenses, adapt your strategy, and watch the action
+            unfold right in front of you! 🚀🔫
+          </>}
+        >
+
+          <div className="image-gallery">
+            <img src={LocalImage.Coffee.board_placement} alt="coffee-table-defender"/>
+            <img src={LocalImage.Coffee.tower_gameplay} alt="coffee-table-defender"/>
+          </div>
+
+          <AppIconLink
+            url={"https://github.com/callen55047/CoffeeTableDefense"}
+            imageSource={LocalImage.Shared.githubIcon}
+            description={"View project repo"}
+          />
+        </ProjectCard>
+
         {/* SHADE TATTOO -------------------- */}
         <div className="project-card">
           <h3 className="project-title">✒️ Shade Tattoo</h3>
@@ -78,7 +105,7 @@ export default function HomePage() {
               <img src={LocalImage.Shade.clientSessions} alt="shade-portal"/>
             </div>
 
-            <AppStoreLink
+            <AppIconLink
               url={"https://apps.apple.com/ca/app/shade-tattoo/id6474099834"}
               imageSource={LocalImage.Shade.appIcon}
             />
@@ -117,7 +144,7 @@ export default function HomePage() {
             <img src={LocalImage.Trulioo.complete} alt="trulioo docv"/>
           </div>
 
-          <AppStoreLink
+          <AppIconLink
             url={"https://apps.apple.com/ca/app/trulioo/id1619835943"}
             imageSource={LocalImage.Trulioo.appIcon}
           />
@@ -154,7 +181,7 @@ export default function HomePage() {
             </li>
           </ul>
 
-          <AppStoreLink
+          <AppIconLink
             url={"https://apps.apple.com/ca/app/traqspera-timesheets/id1539200842"}
             imageSource={LocalImage.Traqspera.icon}
           />
@@ -191,7 +218,7 @@ export default function HomePage() {
             Your browser does not support the video tag.
           </video>
 
-          <AppStoreLink
+          <AppIconLink
             url={"https://apps.apple.com/ca/app/jetlag-3d/id1336123329"}
             imageSource={LocalImage.Serotonin.icon}
           />
