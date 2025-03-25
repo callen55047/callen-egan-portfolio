@@ -1,8 +1,6 @@
 import React, {ReactNode} from 'react'
+import {FlexBox, HorizontalSpacer, IChildren} from "./ViewLayouts";
 
-interface IChildren {
-  children: ReactNode
-}
 
 export default function ProjectsSection(props: IChildren) {
   return (
@@ -32,6 +30,30 @@ function ProjectCard(props: IProjectCard) {
   )
 }
 
+interface IImageDescription {
+  imageSource: string,
+  title: string,
+  description: string,
+}
+function ImageDescription(props: IImageDescription) {
+  const { imageSource, title, description } = props
+  return (
+    <FlexBox justify={'flex-start'}>
+      <div className="image-gallery">
+        <img src={imageSource} alt="image-with-description" />
+      </div>
+
+      <HorizontalSpacer size={20} />
+
+      <FlexBox vertical justify={'flex-start'} style={{maxWidth: '50%'}}>
+        <h4>{title}</h4>
+        <p className="project-description">{description}</p>
+      </FlexBox>
+    </FlexBox>
+  )
+}
+
 export {
-  ProjectCard
+  ProjectCard,
+  ImageDescription,
 }

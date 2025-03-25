@@ -5,7 +5,7 @@ import {AppIconLink} from "./components/Buttons";
 import FooterSection from "./components/FooterSection";
 import ContactSection from "./components/ContactSection";
 import HeaderSection from "./components/HeaderSection";
-import ProjectsSection, {ProjectCard} from "./components/ProjectsSection";
+import ProjectsSection, {ImageDescription, ProjectCard} from "./components/ProjectsSection";
 
 export default function HomePage() {
   return (
@@ -24,14 +24,33 @@ export default function HomePage() {
             <strong> strategic tower placement, and physics-based interactions, </strong>
             Coffee Table Defender transforms your everyday
             space into an immersive battleground. Upgrade your defenses, adapt your strategy, and watch the action
-            unfold right in front of you! 🚀🔫
+            unfold right in front of you!
           </>}
         >
 
-          <div className="image-gallery">
-            <img src={LocalImage.Coffee.board_placement} alt="coffee-table-defender"/>
-            <img src={LocalImage.Coffee.tower_gameplay} alt="coffee-table-defender"/>
-          </div>
+          <h3>🚧 Development in Progress 🔨</h3>
+
+          <ImageDescription
+            imageSource={LocalImage.Coffee.board_placement}
+            title={"Dynamic Board Placement"}
+            description={"The AR system utilizes plane detection and tracking to identify suitable flat surfaces " +
+              "in the user’s environment. Once a surface is detected, a procedural grid system is overlaid, " +
+              "allowing players to scale, rotate, and reposition the game board dynamically. " +
+              "The board remains anchored using AR tracking, ensuring stable placement even as the player moves. " +
+              "To enhance interaction, real-world occlusion and depth sensing are implemented, allowing objects to " +
+              "realistically integrate with the physical space."}
+          />
+
+          <ImageDescription
+            imageSource={LocalImage.Coffee.tower_gameplay}
+            title={"Building your Defenses"}
+            description={"Towers are instantiated as AR objects, snapped to the game board’s grid system using " +
+              "raycasting and collision detection. Each tower has a modular upgrade system, where attributes " +
+              "such as range, fire rate, and damage are dynamically adjusted. Enemy units follow navigation paths " +
+              "generated in real-time, accounting for when player-placed defenses obstruct movement. " +
+              "Performance optimizations include object pooling for towers and enemies, ensuring efficient memory " +
+              "usage and smooth gameplay on all supported devices."}
+          />
 
           <AppIconLink
             url={"https://github.com/callen55047/CoffeeTableDefense"}
