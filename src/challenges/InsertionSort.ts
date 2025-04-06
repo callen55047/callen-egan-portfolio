@@ -17,6 +17,7 @@ class InsertionSort {
       const currentPair = currentState[i];
       let newIndex = -1;
 
+      // only iterate over the items we have already sorted
       for (let x = 0; x < i; x++) {
         if (currentPair.key < currentState[x].key) {
           newIndex = x;
