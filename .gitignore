@@ -40,7 +40,7 @@ yarn-error.log*
 coverage/
 jest/
 jest.config.js
-jest.config.ts
+jest.config.js
 jest.setup.js
 jest.setup.ts
 .cypress
